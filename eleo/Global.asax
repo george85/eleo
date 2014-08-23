@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="eleo.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="eleo.MvcApplication" Language="C#" %>

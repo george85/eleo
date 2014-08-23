@@ -1,7 +1,6 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
-    Layout = "~/Views/_MainLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section HeadSection{
@@ -23,6 +22,9 @@
         </ul>
     </li>
     <li>
+        <a data-hash href="#homeconcept">About us</a>
+    </li>
+    <li>
         <a data-hash href="#projects">Latest Projects</a>
     </li>
     <li>
@@ -35,6 +37,8 @@
         <a data-hash href="#contact">Contact Us</a>
     </li>
 }
+
+
 
 <div class="slider-container">
     <div class="slider" id="revolutionSlider">
@@ -179,6 +183,8 @@
         </ul>
     </div>
 </div>
+
+
 <div class="home-intro">
     <div class="container">
 
@@ -200,6 +206,738 @@
     </div>
 </div>
 
+<div class="home-concept">
+    <div class="container">
+        <div class="row center" id="homeconcept">
+            <span class="sun"></span>
+            <span class="cloud"></span>
+            <div class="col-md-2 col-md-offset-1">
+                <div class="process-image" data-appear-animation="bounceIn">
+                    <img src="~/img/home-concept-item-1.png" alt="" />
+                    <strong>Strategy</strong>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="200">
+                    <img src="~/img/home-concept-item-2.png" alt="" />
+                    <strong>Planning</strong>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="400">
+                    <img src="~/img/home-concept-item-3.png" alt="" />
+                    <strong>Build</strong>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="project-image">
+                    <div id="fcSlideshow" class="fc-slideshow">
+                        <ul class="fc-slides">
+                            <li><a href="portfolio-single-project.html"><img class="img-responsive" src="~/img/projects/project-home-1.jpg" /></a></li>
+                            <li><a href="portfolio-single-project.html"><img class="img-responsive" src="~/img/projects/project-home-2.jpg" /></a></li>
+                            <li><a href="portfolio-single-project.html"><img class="img-responsive" src="~/img/projects/project-home-3.jpg" /></a></li>
+                        </ul>
+                    </div>
+                    <strong class="our-work">Our Work</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section class="highlight top">
+    <div class="container">
+        <div class="row" id="projects">
+            <div class="col-md-12">
+                <h1>Latest <strong>Projects</strong></h1>
+
+                <div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 4, "singleItem": false, "autoHeight": true}'>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">SEO</span>
+                                    <span class="thumb-info-type">Website</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject" class="popup-inline-content">
+                            <h2>SEO</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject2" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-1.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Okler</span>
+                                    <span class="thumb-info-type">Brand</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject2" class="popup-inline-content">
+                            <h2>Okler</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-1.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject3" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-2.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">The Fly</span>
+                                    <span class="thumb-info-type">Logo</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject3" class="popup-inline-content">
+                            <h2>The Fly</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-2.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject4" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-3.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">The Code</span>
+                                    <span class="thumb-info-type">Website</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject4" class="popup-inline-content">
+                            <h2>The Code</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-3.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject5" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">SEO</span>
+                                    <span class="thumb-info-type">Website</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject5" class="popup-inline-content">
+                            <h2>SEO</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject6" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-1.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Okler</span>
+                                    <span class="thumb-info-type">Brand</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject6" class="popup-inline-content">
+                            <h2>Okler</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-1.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject7" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-2.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">The Fly</span>
+                                    <span class="thumb-info-type">Logo</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject7" class="popup-inline-content">
+                            <h2>The Fly</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-2.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="portfolio-item img-thumbnail">
+                            <a class="thumb-info lightbox" href="#popupProject8" data-plugin-options='{"type":"inline", preloader: false}'>
+                                <img alt="" class="img-responsive" src="~/img/projects/project-3.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">The Code</span>
+                                    <span class="thumb-info-type">Website</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span title="Universal" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="popupProject8" class="popup-inline-content">
+                            <h2>The Code</h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="img-thumbnail img-responsive" alt="" src="~/img/projects/project-3.jpg">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h4>Project <strong>Description</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+                                    <a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+                                    <h4 class="push-top">Services</h4>
+
+                                    <ul class="list icons list-unstyled">
+                                        <li><i class="icon icon-check"></i> Design</li>
+                                        <li><i class="icon icon-check"></i> HTML/CSS</li>
+                                        <li><i class="icon icon-check"></i> Javascript</li>
+                                        <li><i class="icon icon-check"></i> Backend</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <div class="row center">
+        <div class="col-md-12">
+            <h2 class="short word-rotator-title">
+                Porto is
+                <strong class="inverted" data-appear-animation="bounceIn">
+                    <span class="word-rotate">
+                        <span class="word-rotate-items">
+                            <span>incredibly</span>
+                            <span>especially</span>
+                            <span>extremely</span>
+                        </span>
+                    </span>
+                </strong>
+                beautiful and fully responsive.
+            </h2>
+            <p class="featured lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+            </p>
+        </div>
+    </div>
+
+    <hr class="tall" />
+</div>
+
+<div class="container">
+    <div class="row" id="features">
+        <div class="col-md-8">
+            <h2 data-appear-animation="fadeInLeft">Our <strong>Features</strong></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-group"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Customer Support</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-file"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">HTML5 / CSS3 / JS</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, adip.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-google-plus"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">500+ Google Fonts</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-adjust"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Colors</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-film"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Sliders</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-user"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Icons</h4>
+                            <p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-bars"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Buttons</h4>
+                            <p class="tall">Lorem ipsum dolor sit, consectetur adip.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-icon">
+                            <i class="icon icon-desktop"></i>
+                        </div>
+                        <div class="feature-box-info">
+                            <h4 class="shorter">Lightbox</h4>
+                            <p class="tall">Lorem sit amet, consectetur adip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2 data-appear-animation="fadeInRight">and more...</h2>
+
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <i class="icon icon-usd"></i>
+                                Pricing Tables
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="panel-body">
+                            Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <i class="icon icon-comment"></i>
+                                Contact Forms
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="panel-body">
+                            Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <i class="icon icon-laptop"></i>
+                                Portfolio Pages
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse">
+                        <div class="panel-body">
+                            Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(../img/parallax.jpg);">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-12">
+                <i class="icon icon-featured icon-comments" data-appear-animation="bounceIn"></i>
+                <h1 class="short text-shadow big white bold"><strong>We're excited about Porto Template</strong></h1>
+                <h3 class="lead white">5,500 customers in 100 countries use Porto Template. Meet our customers.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row" id="team">
+        <div class="col-md-12">
+            <h2 data-appear-animation="fadeInLeft">Meet the <strong>Team</strong></h2>
+
+            <div class="row">
+
+                <ul class="team-list">
+                    <li class="col-md-3">
+                        <div class="team-item thumbnail">
+                            <a href="#" class="thumb-info team">
+                                <img alt="" height="270" src="~/img/team/team-1.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">John Doe</span>
+                                    <span class="thumb-info-type">CEO</span>
+                                </span>
+                            </a>
+                            <span class="thumb-info-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan.</p>
+                                <span class="thumb-info-social-icons">
+                                    <a rel="tooltip" data-placement="bottom" target="_blank" href="http://www.facebook.com" data-original-title="Facebook"><i class="icon icon-facebook"></i><span>Facebook</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.twitter.com" data-original-title="Twitter"><i class="icon icon-twitter"></i><span>Twitter</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.linkedin.com" data-original-title="Linkedin"><i class="icon icon-linkedin"></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="team-item thumbnail">
+                            <a href="#" class="thumb-info team">
+                                <img alt="" height="270" src="~/img/team/team-2.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Jessica Doe</span>
+                                    <span class="thumb-info-type">Marketing</span>
+                                </span>
+                            </a>
+                            <span class="thumb-info-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan.</p>
+                                <span class="thumb-info-social-icons">
+                                    <a rel="tooltip" data-placement="bottom" target="_blank" href="http://www.facebook.com" data-original-title="Facebook"><i class="icon icon-facebook"></i><span>Facebook</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.twitter.com" data-original-title="Twitter"><i class="icon icon-twitter"></i><span>Twitter</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.linkedin.com" data-original-title="Linkedin"><i class="icon icon-linkedin"></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="team-item thumbnail">
+                            <a href="#" class="thumb-info team">
+                                <img alt="" height="270" src="~/img/team/team-3.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Rick Edward Doe</span>
+                                    <span class="thumb-info-type">Developer</span>
+                                </span>
+                            </a>
+                            <span class="thumb-info-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan.</p>
+                                <span class="thumb-info-social-icons">
+                                    <a rel="tooltip" data-placement="bottom" target="_blank" href="http://www.facebook.com" data-original-title="Facebook"><i class="icon icon-facebook"></i><span>Facebook</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.twitter.com" data-original-title="Twitter"><i class="icon icon-twitter"></i><span>Twitter</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.linkedin.com" data-original-title="Linkedin"><i class="icon icon-linkedin"></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="team-item thumbnail">
+                            <a href="#" class="thumb-info team">
+                                <img alt="" height="270" src="~/img/team/team-4.jpg">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">Melinda Wolosky</span>
+                                    <span class="thumb-info-type">Design</span>
+                                </span>
+                            </a>
+                            <span class="thumb-info-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan.</p>
+                                <span class="thumb-info-social-icons">
+                                    <a rel="tooltip" data-placement="bottom" target="_blank" href="http://www.facebook.com" data-original-title="Facebook"><i class="icon icon-facebook"></i><span>Facebook</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.twitter.com" data-original-title="Twitter"><i class="icon icon-twitter"></i><span>Twitter</span></a>
+                                    <a rel="tooltip" data-placement="bottom" href="http://www.linkedin.com" data-original-title="Linkedin"><i class="icon icon-linkedin"></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(../img/parallax-transparent.jpg);">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-12">
+                <i class="icon icon-featured icon-envelope" data-appear-animation="bounceIn"></i>
+                <h1 class="short text-shadow big bold" data-appear-animation="fadeInUp"><strong>Get in Touch With Us</strong></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Maps -->
+<div id="googlemaps" class="google-map push-top"></div>
+
+<div class="container">
+
+    <div class="row" id="contact">
+        <div class="col-md-6">
+
+            <div class="alert alert-success hidden" id="contactSuccess">
+                <strong>Success!</strong> Your message has been sent to us.
+            </div>
+
+            <div class="alert alert-danger hidden" id="contactError">
+                <strong>Error!</strong> There was an error sending your message.
+            </div>
+
+            <h2 class="short"><strong>Contact</strong> Us</h2>
+            <form action="php/contact-form.php" id="contactForm" type="post">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Your name *</label>
+                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Your email address *</label>
+                            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>Subject</label>
+                            <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>Message *</label>
+                            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+
+            <h4 class="push-top">Get in <strong>touch</strong></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.</p>
+
+            <hr />
+
+            <h4>The <strong>Office</strong></h4>
+            <ul class="list-unstyled">
+                <li><i class="icon icon-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</li>
+                <li><i class="icon icon-phone"></i> <strong>Phone:</strong> (123) 456-7890</li>
+                <li><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+            </ul>
+
+            <hr />
+
+            <h4>Business <strong>Hours</strong></h4>
+            <ul class="list-unstyled">
+                <li><i class="icon icon-time"></i> Monday - Friday 9am to 5pm</li>
+                <li><i class="icon icon-time"></i> Saturday - 9am to 2pm</li>
+                <li><i class="icon icon-time"></i> Sunday - Closed</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
 
 @section ScriptsSection{
     <!-- Current Page JS -->
